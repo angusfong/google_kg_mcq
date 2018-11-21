@@ -4,7 +4,7 @@ import urllib
 import urllib.parse
 import urllib.request
 
-api_key = 'AIzaSyATcPty0pvfHl5ro5durFu7cGzjmu0WD90'
+api_key = open('.api_key').read()
 query = 'Taylor Swift'
 service_url = 'https://kgsearch.googleapis.com/v1/entities:search'
 params = {
