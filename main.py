@@ -12,8 +12,11 @@ params = {
     'limit': 10,
     'indent': True,
     'key': api_key,
+    'types': 'Person'
 }
 url = service_url + '?' + urllib.parse.urlencode(params)
 response = json.loads(urllib.request.urlopen(url).read())
 for element in response['itemListElement']:
-  print element['result']['name'] + ' (' + str(element['resultScore']) + ')'
+    print(element.keys())
+    print(element['result'].keys())
+    print(element['result']['name'] + ' (' + str(element['resultScore']) + ')')
