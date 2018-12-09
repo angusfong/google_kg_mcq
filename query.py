@@ -12,14 +12,14 @@ import urllib.request
 LIMIT = 100
 API_KEY = open('.api_key').read()
 
-query = 'chess'
+query = input("Search for: ")
 service_url = 'https://kgsearch.googleapis.com/v1/entities:search'
 params = {
     'query': query,
     'limit': LIMIT,
     'indent': True,
     'key': API_KEY,
-    'types': 'Movie'
+    'types': 'Thing'
 }
 
 url = service_url + '?' + urllib.parse.urlencode(params)
