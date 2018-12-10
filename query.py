@@ -27,6 +27,8 @@ params = {
     'types': 'Thing'
 }
 
+url = service_url + '?' + urllib.parse.urlencode(params)
+
 #loop until successfully get response (might take some time depending on server)
 while True:
     try:
