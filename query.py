@@ -43,9 +43,10 @@ ids = []
 names = []
 scores = []
 for element in response['itemListElement']:
-    names.append(element['result']['name'])
-    ids.append(element['result']['@id'][3:]) #this gets freebase id
-    scores.append(element['resultScore'])
+    if 'name' in element['result'].keys():
+        names.append(element['result']['name'])
+        ids.append(element['result']['@id'][3:]) #this gets freebase id
+        scores.append(element['resultScore'])
 
 #define probability distribution over search results
 probs = [score/sum(scores) for score in scores]
