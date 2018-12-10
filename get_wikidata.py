@@ -32,3 +32,4 @@ def get_wikidata(id):
   #generate distractors:
   #current way: get entities of that property type
   #write sparql code
+  
