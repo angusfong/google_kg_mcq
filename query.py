@@ -24,7 +24,7 @@ params = {
     'limit': LIMIT,
     'indent': True,
     'key': API_KEY,
-    'types': 'Thing'
+    'types': 'Person'
 }
 
 url = service_url + '?' + urllib.parse.urlencode(params)
