@@ -80,7 +80,7 @@ data = []
 begin = time.time()
 while len(data) == 0:
     if time.time() - begin > 30:
-        raise Exception('Wikidata has nothing to quiz you on about a ' + params['types'] + ' called ' + query + ' :(')
+        raise Exception('Wikidata has nothing to quiz you on about a ' + params['types'] + ' called ' + sys.argv[1] + ' :(')
     ind = np.random.choice(n, p=probs)
     id = ids[ind]
     #print('Probabilistically selected entity: ' + names[ind])
