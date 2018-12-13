@@ -1,3 +1,6 @@
+import nltk
+from nltk.tag.stanford import StanfordPOSTagger
+
 # generate a question that asks the property of entity
 def q_generate(entity, property):
     tags = tag_property(property)
