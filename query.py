@@ -189,8 +189,7 @@ while True:
     random.shuffle(unnumbered)
     numbered = [str(i+1) + '. ' + unnumbered[i] for i in range(len(unnumbered))]
 
-    #q_generator.q_generate(names[ind], prop_name)
-    print("The " + prop_name + " of " + names[ind] + " is ___")
+    q_generator.q_generate(names[ind], prop_name)
 
     print(numbered)
     response = input("Enter correct number: ")
