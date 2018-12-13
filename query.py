@@ -12,7 +12,7 @@ import urllib
 import urllib.parse
 import urllib.request
 import time
-import q_generate
+import q_generator
 import random
 #import get_wikidata
 
@@ -189,7 +189,7 @@ while True:
     random.shuffle(unnumbered)
     numbered = [str(i+1) + '. ' + unnumbered[i] for i in range(len(unnumbered))]
 
-    #q_generate.q_generate(names[ind], prop_name)
+    #q_generator.q_generate(names[ind], prop_name)
     print("The " + prop_name + " of " + names[ind] + " is ___")
 
     print(numbered)
