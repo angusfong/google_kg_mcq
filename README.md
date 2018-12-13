@@ -1,4 +1,4 @@
-# Generating Multiple-Choice Questions Using the Google Knowledge Graph and Wikidata
+# Generating Multiple-Choice Questions Using Google Knowledge Graph and Wikidata
 ## Downloading the Stanford POS Tagger
 If you do not already have access, it can be downloaded here: https://nlp.stanford.edu/software/tagger.shtml
 
