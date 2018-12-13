@@ -6,4 +6,5 @@ Define tagger path with `export TAGGER=$PATH/TO/TAGGER`
 
 ## Running query.py
 
-Usage: `python query.py [topic_of_initerest] -topic [thing/person/...]`
+Usage: `python query.py [topic_of_initerest] -type ["Thing"/"Person"/"Place" or other schemas found at schemas.org]`
+Optional: `-specific` to return most relevant entity only
